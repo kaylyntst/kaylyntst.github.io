@@ -1,0 +1,162 @@
+
+ul{
+    list-style:none; 
+    margin:0;     /*no space on top*/
+    padding-right: 7.0em;   /*no space on left*/
+    padding-left: 7.0em;
+    border-bottom: 1px solid rgb(207, 205, 205);
+    border-top: 2px solid rgb(107, 10, 164);
+    display: flex;  /*lines on top*/ 
+    background: rgb(248, 247, 247);
+    margin-bottom: 27px;
+
+  }
+  li{
+    
+    flex: 1;    
+    text-align: center; 
+    
+  }
+  nav a{              /*goes to a in nav?*/
+    text-decoration: none;   /*no underline*/
+    color:rgb(100, 99, 99); /*text from blue to black*/
+    /*background: pink; for debugging*/
+    display: block;  /*expands to make more of chunk clickable*/
+    padding: 13px;
+    font-size: 1.05em; /*whatever size is for parent, doesnt change anything, 0.9 a bit smaller*/
+    /*box-shadow: 2px 2px;*/
+  }
+
+  p.current_page{
+    color: rgb(107, 10, 164);
+    display: block;
+    font-size: 1.05em;
+  }
+
+  aside {
+    float: left;
+    margin: 0 1.5%;
+    width: 30%;
+    border-right: 1px solid rgb(207, 205, 205);
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    border-radius: 100%;
+    width: 120px;
+    height: 150px;
+    margin-left: 80px;
+    margin-top: 22px;
+  }
+
+  p.name{
+    color: rgb(111, 110, 110);
+    font-size: 1.4em;
+    margin-left: 85px;
+    height: 0.05em;
+    font-weight: 300;
+  }
+
+  p.student{
+    color: rgb(154, 152, 152);
+    font-size: 1em;
+    margin-left: 92px;
+    height: 0.5em;
+  }
+
+  p.email{
+    color: rgb(107, 10, 164);
+    font-size: 0.7em;
+    margin-left: 83px;
+    height: 1000px;
+  }
+
+  p.header{
+    color: rgb(100, 99, 99);
+    font-size: 1.9em;
+    margin-top: 40px;
+    font-weight: 200;
+    margin-bottom: 40px;
+  }
+  main{
+    color: rgba(0, 0, 0, 0.732);
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+  }
+
+  td.location{
+    padding-bottom:15px;
+  }
+  td.school{
+    padding-bottom:15px;
+  }
+  td.school{
+    font-size:0.8em;
+  }
+  td.timeline{
+    text-align: right;
+  }
+  td.location{
+    text-align: right;
+    font-size:0.8em;
+  }
+  p.bottom{
+    font-size:0.85em;
+    color:grey;
+    margin-top: 80px;
+  }
+  a.resume{
+    color: rgb(107, 10, 164);
+    text-decoration: none; 
+  }
+  ul.interests{
+    list-style:none; 
+    margin:0;     /*no space on top*/
+    padding-right: 0;   /*no space on left*/
+    padding-left: 30px;
+    border-bottom: none;
+    border-top: none;
+    display: flex;  /*lines on top*/ 
+    flex-direction: column;
+    background: white;
+    margin-bottom: 0;
+  }
+  li.int{
+    
+    flex: 1;    
+    text-align: left; 
+    margin-bottom: 10px;
+    list-style-type: "- ";
+    color: rgb(80, 79, 79);
+  }
+  tr.skills{
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+    font-size: 0.85em;
+  }
+  progress[value]{
+    width: 90%;
+    height: 25px;
+  }
+  @media (max-width: 720px) {
+    aside{
+        margin-left: 200px;
+        margin-top: 0px;
+        width: 100%;
+        justify-content: center;
+    }
+    p.email{
+      height:10px
+    }
+    main{
+      border-top: 1px solid rgb(207, 205, 205);
+    }
+    p.header{
+      margin-top: 20px;
+    }
+}
+
+
